@@ -10,7 +10,7 @@
 
 int main(int argc, char *argv[])
 {
-	int(__attribute__((unused))n1),(__attribute__((unused))n2);
+	int(__attribute__((unused))n1), (__attribute__((unused))n2);
 
 	if (argc != 3)
 	{
