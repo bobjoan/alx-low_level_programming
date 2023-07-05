@@ -11,9 +11,9 @@
 listint_t *add_nodeint(listint_t **head, const int n)
 {
 	listint_t *struct_node;
-	
+
 	struct_node = malloc(sizeof(listint_t));
-	
+
 	if (struct_node == NULL)
 	{
 		return (NULL);
