@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "lists.h"
+#include <string.h>
 /**
  * add_node - adds a new node at the beginning of a list_t list.
  * @head: linked list
@@ -19,7 +20,7 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 	}
 
-	newNode->str = str;
+	newNode->str = strdup(str);
 	newNode->next = *head;
 	*head = newNode;
 
